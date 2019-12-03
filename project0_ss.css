@@ -155,8 +155,9 @@
 
 p {
   font-family: sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   padding: 20px;
+  margin:20px;
 }
 
 .basketball {
@@ -188,11 +189,17 @@ p {
     flex-wrap:wrap;
   }
 }
-#wtfdude {
+div ~ ul {
     font-size: 30px;
     font-family:sans-serif;
     color: red;
 }
+div ~ ul:hover {
+    font-size: 28px;
+    font-family:fantasy;
+    color: yellow;
+}
+
 
 #etc1{
   padding-top: 20px;
@@ -201,7 +208,7 @@ p {
   color: purple;
 }
 
-.row {
+/* .row {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -209,9 +216,9 @@ p {
   margin-right: 5px;
   margin-left: 5px;
 
-}
+} */
 
-@media (min-width: 567px) {
+/* @media (min-width: 567px) {
   .col-sm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -221,5 +228,36 @@ p {
     border: groove 2px blue;
     border-collapse:collapse;
     padding-left: 5px;
-
   }
+
+} */
+div > h1 {
+  font-size: 1.5rem;
+  color: #9E2107;
+  text-align: center;
+
+}
+@media (max-width:567px){ /* if content of page is 567px or less, do this*/
+  div > p {
+    font-size: 0.7rem;
+    font-family: cursive;
+  }
+  div > h1 {
+    font-size: 0.7rem;
+    font-family: cursive
+  }
+}
+
+img {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.r {
+  background-color: #F76565;
+}
+.o {
+  background-color: #F49B5E;
+}
+/* coded by Brian Corella */
